@@ -9,6 +9,10 @@ public class Scale {
         Arrays.sort(weight);
 
         answer = weight[0];
+        if(answer>1){
+            System.out.println(1);
+            return ;
+        }
         for (int i = 1; i < weight.length; i++) {
             if (answer + 1 < weight[i]) { break; }
             else { answer += weight[i]; }
