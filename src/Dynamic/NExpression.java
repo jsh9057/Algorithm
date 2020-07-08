@@ -17,9 +17,8 @@ public class NExpression {
         ArrayList<Set<Integer>> array= new ArrayList<>();
         int[] arr = new int[MAX_RANGE];
         arr[N]=1;
-        for(int i=0 ; i<=MAX_N; i++){
-            array.add(new HashSet<>());
-        }
+        for(int i=0 ; i<=MAX_N; i++){ array.add(new HashSet<>()); }
+
         array.get(1).add(N);
         int digit = 1;
         if(number == N)
@@ -69,6 +68,7 @@ public class NExpression {
                     if(digit*N==number){ return arr[digit*N]; }
                 }
             }
+
             for(int i=1; i<=answer; i++){
                 Iterator iti = array.get(i).iterator();
                 while(iti.hasNext()){
@@ -79,57 +79,38 @@ public class NExpression {
                             int n2 = (int) itj.next();
                             int count = i+j;
                             int v;
-                            if(count > MAX_N)
-                                break;
+                            if(count > MAX_N) {break;}
                             v=n+n2;
                             if(isRange(v)){
                                 if(arr[v]==0){arr[v]=count; array.get(count).add(v);}
                                 else{
-                                    if(arr[v]>count){
-                                        arr[v]=count;
-                                        array.get(count).add(v);
-                                    }
+                                    if(arr[v]>count){ arr[v]=count;array.get(count).add(v); }
                                 }
                             }
 
                             v=n-n2;
                             if(isRange(v)) {
                                 if (v > 0) {
-                                    if (arr[v] == 0) {
-                                        arr[v] = count;
-                                        array.get(count).add(v);
-                                    }  else{
-                                        if(arr[v]>count){
-                                            arr[v]=count;
-                                            array.get(count).add(v);
-                                        }
+                                    if (arr[v] == 0) { arr[v] = count;array.get(count).add(v); }
+                                    else{
+                                        if(arr[v]>count){ arr[v]=count;array.get(count).add(v); }
                                     }
                                 }
                             }
 
                             v=n*n2;
                             if(isRange(v)) {
-                                if (arr[v] == 0) {
-                                    arr[v] = count;
-                                    array.get(count).add(v);
-                                }  else{
-                                    if(arr[v]>count){
-                                        arr[v]=count;
-                                        array.get(count).add(v);
-                                    }
+                                if (arr[v] == 0) { arr[v] = count;array.get(count).add(v); }
+                                else{
+                                    if(arr[v]>count){ arr[v]=count;array.get(count).add(v); }
                                 }
                             }
                             v=n/n2;
                             if(isRange(v)) {
                                 if (v > 0) {
-                                    if (arr[v] == 0) {
-                                        arr[v] = count;
-                                        array.get(count).add(v);
-                                    }  else{
-                                        if(arr[v]>count){
-                                            arr[v]=count;
-                                            array.get(count).add(v);
-                                        }
+                                    if (arr[v] == 0) { arr[v] = count;array.get(count).add(v); }
+                                    else{
+                                        if(arr[v]>count){ arr[v]=count;array.get(count).add(v); }
                                     }
                                 }
                             }
