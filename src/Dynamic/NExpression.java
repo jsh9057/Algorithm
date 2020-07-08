@@ -1,12 +1,11 @@
 package Dynamic;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class NExpression {
     public static void main(String args[]){
-        int N=2;
-        int number = 11;
+        int N=5;
+        int number = 127;
         int sol = solution(N,number);
         System.out.println(sol);
     }
@@ -14,65 +13,136 @@ public class NExpression {
     static final int MAX_RANGE=32000;
     static final int MAX_N = 8;
     public static int solution(int N, int number) {
-        int answer = 0;
+        int answer = 1;
+        ArrayList<Set<Integer>> array= new ArrayList<>();
         int[] arr = new int[MAX_RANGE];
-        boolean[] visit = new boolean[MAX_RANGE];
+        arr[N]=1;
+        for(int i=0 ; i<=MAX_N; i++){
+            array.add(new HashSet<>());
+        }
+        array.get(1).add(N);
         int digit = 1;
-        Queue<Integer> q = new LinkedList<>();
-        q.add(N);
-        arr[N] = 1;
-        answer = 1;
+        if(number == N)
+            return 1;
 
+        answer++;
         while (answer <= MAX_N) {
-            digit += Math.pow(10, answer);
-            while (!q.isEmpty()) {
-                int n = q.poll();
-                int plus = N + n;
+            digit += Math.pow(10,answer-1);
+            Iterator it = array.get(answer-1).iterator();
+
+            while (it.hasNext()){
+
+                int n = (Integer) it.next();
+                int sum = n + N;
                 int sub = n - N;
-                int mul = n * N;
                 int div = n / N;
+                int mul = n * N;
 
-                int value = plus;
-                int re = compute(value, q, arr, visit, answer, number);
-                if (re != -1) return re;
+                if (isRange(sum) ) {
+                    if(arr[sum]!=0){Math.min(arr[sum],answer);}
+                    else if(arr[sum]==0){arr[sum]=answer;}
+                    array.get(arr[sum]).add(sum);
+                    if(sum==number){ return arr[sum];}
+                }
+                if (isRange(sub) ) {
+                    if(arr[sub]!=0){Math.min(arr[sub],answer);}
+                    else if(arr[sub]==0){arr[sub]=answer;}
+                    array.get(arr[sub]).add(sub);
+                    if(sub==number){ return arr[sub]; }
+                }
+                if (isRange(div)) {
+                    if(arr[div]!=0){Math.min(arr[div],answer);}
+                    else if(arr[div]==0){arr[div]=answer;}
+                    array.get(arr[div]).add(div);
+                    if(div==number){ return arr[div]; }
+                }
+                if (isRange(mul)) {
+                    if(arr[mul]!=0){Math.min(arr[mul],answer);}
+                    else if(arr[mul]==0){arr[mul]=answer;}
+                    array.get(arr[mul]).add(mul);
+                    if(mul==number){ return arr[mul]; }
+                }
+                if (isRange(digit*N)) {
+                    if(arr[digit*N]!=0){Math.min(arr[digit*N],answer);}
+                    else if(arr[digit*N]==0){arr[digit*N]=answer;}
+                    array.get(arr[digit*N]).add(digit*N);
+                    if(digit*N==number){ return arr[digit*N]; }
+                }
+            }
+            for(int i=1; i<=answer; i++){
+                Iterator iti = array.get(i).iterator();
+                while(iti.hasNext()){
+                    int n = (int) iti.next();
+                    for(int j=1; j<=answer; j++){
+                        Iterator itj =array.get(j).iterator();
+                        while (itj.hasNext()){
+                            int n2 = (int) itj.next();
+                            int count = i+j;
+                            int v;
+                            if(count > MAX_N)
+                                break;
+                            v=n+n2;
+                            if(isRange(v)){
+                                if(arr[v]==0){arr[v]=count; array.get(count).add(v);}
+                                else{
+                                    if(arr[v]>count){
+                                        arr[v]=count;
+                                        array.get(count).add(v);
+                                    }
+                                }
+                            }
 
-                value = sub;
-                re = compute(value, q, arr, visit, answer, number);
-                if (re != -1) return re;
+                            v=n-n2;
+                            if(isRange(v)) {
+                                if (v > 0) {
+                                    if (arr[v] == 0) {
+                                        arr[v] = count;
+                                        array.get(count).add(v);
+                                    }  else{
+                                        if(arr[v]>count){
+                                            arr[v]=count;
+                                            array.get(count).add(v);
+                                        }
+                                    }
+                                }
+                            }
 
-                value = mul;
-                re = compute(value, q, arr, visit, answer, number);
-                if (re != -1) return re;
-
-                value = div;
-                re = compute(value, q, arr, visit, answer, number);
-                if (re != -1) return re;
-
-                value = digit*N;
-                re = compute(value, q, arr, visit, answer, number);
-                if (re != -1) return re;
+                            v=n*n2;
+                            if(isRange(v)) {
+                                if (arr[v] == 0) {
+                                    arr[v] = count;
+                                    array.get(count).add(v);
+                                }  else{
+                                    if(arr[v]>count){
+                                        arr[v]=count;
+                                        array.get(count).add(v);
+                                    }
+                                }
+                            }
+                            v=n/n2;
+                            if(isRange(v)) {
+                                if (v > 0) {
+                                    if (arr[v] == 0) {
+                                        arr[v] = count;
+                                        array.get(count).add(v);
+                                    }  else{
+                                        if(arr[v]>count){
+                                            arr[v]=count;
+                                            array.get(count).add(v);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             answer++;
         }
         return -1;
-//        System.out.println(answer);
     }
-    public static boolean isRange(int n){
-        return (n>0 && n<MAX_RANGE) ? true :  false;
-    }
-    public static void minReturn(int n, int[] arr, int answer){
-        if(arr[n]==0) { arr[n]= answer;}
-        else {arr[n]= Math.min(arr[n],answer);}
-    }
-    public static int compute(int value, Queue<Integer> q, int[] arr, boolean[] visit, int answer, int number){
-        if (isRange(value)&&visit[value]==false) {
-            q.add(value);
-            minReturn(value, arr, answer);
-            visit[value]=true;
-            if (value == number) {
-                return answer;
-            }
-        }
-        return -1;
+    static boolean isRange(int n){
+        if(n>0 && n<MAX_RANGE) {return true;}
+        else {return false;}
     }
 }
