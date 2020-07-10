@@ -5,7 +5,7 @@ import java.util.*;
 public class NExpression {
     public static void main(String args[]){
         int N=5;
-        int number = 127;
+        int number = 57;
         int sol = solution(N,number);
         System.out.println(sol);
     }
