@@ -16,7 +16,7 @@ public class Budget {
         if(left>=right){ System.out.println(right);}
         while (left<=right){
         int mid=(left+right)/2; //
-        int sum=0;
+        long sum=0;
             for(int n: budgets){
                 if(n<=mid) {sum+=n;}
                 else {sum+=mid;}
