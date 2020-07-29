@@ -3,7 +3,7 @@ import java.util.*;
 
 public class TravelRoute {
 
-    static ArrayList<String> rout= new ArrayList<>();
+    static ArrayList<String> route= new ArrayList<>();
 
     public static void main(String args[]) {
 //        String[][] tickets = {{"ICN", "A"}, {"ICN", "B"},{"B","ICN"}};
@@ -19,14 +19,14 @@ public class TravelRoute {
             dfs(tickets,"ICN",tickets[i][1],chk,1);
         }
     }
-    rout.sort(null);
-    System.out.println(rout.get(0));
+    route.sort(null);
+    System.out.println(route.get(0));
     }
 
     static void dfs(String[][] tickets,String s, String last, boolean[] chk, int cnt){
         s+=","+last;
         if(cnt == tickets.length){
-            rout.add(s);
+            route.add(s);
             return;
         }
 
