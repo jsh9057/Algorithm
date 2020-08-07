@@ -10,7 +10,6 @@ public class SteppingStones {
         int n=2;
         SteppingStones steppingStones=new SteppingStones();
         System.out.println(steppingStones.BinarySearch(distance,rocks,n));
-
     }
 
     public int BinarySearch(int distance, int[] rocks, int n){
