@@ -48,7 +48,6 @@ public class CraneDoll {
                 if(deleteDoll==false){dollStack.add(now);}
             }
         }
-
         return answer;
     }
 }
