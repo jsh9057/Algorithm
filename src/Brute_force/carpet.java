@@ -3,8 +3,8 @@ package Brute_force;
 
 public class carpet{
     public static void main(String args[]){
-        int brown=8;
-        int yellow=1;
+        int brown=24;
+        int yellow=24;
         int[] answer =new int[2];
 
         int g=yellow;

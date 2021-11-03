@@ -10,6 +10,8 @@ public class Max {
         String[] value = new String [length];
         for(int i=0; i<length; i++)
             value[i]=String.valueOf(arr[i]).repeat(Maxsize);
+        for(String s:value)
+            System.out.println(s);
         return value;
     }
 
@@ -23,9 +25,9 @@ public class Max {
 
     public static void main(String[] args){
 //        int [] numbers = {3, 30, 34, 5, 9};
-//        int [] numbers = {2,20,200};
+        int [] numbers = {2,20,200};
 //        int [] numbers = {6,10,2};
-        int [] numbers = {0,0,0,0};
+//        int [] numbers = {0,0,0,0};
         String answer;
         String[] arr=traceItoS(numbers);
         Arrays.sort(arr,Collections.reverseOrder());
