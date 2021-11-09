@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69ee7b51-f23a-41bb-86f0-06ec2331d211" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/expert_algo/src/DP/Nnumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expert_algo/src/DP/Nnumber2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level2/boj1330.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level2/boj14681.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level2/boj2753.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level2/boj2884.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level2/boj9498.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj10871.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj10950.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj11021.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj11022.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj15552.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj2438.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj2439.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj2739.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj2741.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj2742.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level3/boj8393.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level4/boj10951.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level4/boj10952.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level4/boj1110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj10818.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj1546.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj2562.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj2577.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj3052.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj4344.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/MHC_Study/Level5/boj8958.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/boj11726.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BOJ/boj1463.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BinarySearch/Budget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BinarySearch/Immigration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BinarySearch/SteppingStones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/BitMasking/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Brute_force/TSP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Brute_force/TSP_update.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/ChangeWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/Network.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/TargetNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/TravelRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/BackRoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/NExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/Thievery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/Tile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/Travel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Dynamic/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Graph/FarthestNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Graph/Ranking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/ConnectIsland.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/GymSuit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/Joystick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/Lifeboat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/MakeMaxNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/Scale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Greedy/SpeedTrap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/KakaoWinter/BadUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/KakaoWinter/CraneDoll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/KakaoWinter/HotelRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/KakaoWinter/SteppingStone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/KakaoWinter/Tuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/src/Stack_Queeue/SkillTree.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="algo" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/expert_algo" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="6c5fffb0-2247-4050-ae83-181629f41aba" />
+  </component>
+  <component name="ProjectId" id="1RXwf3v76IqgNA6Dh2obDiJtcqd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Greedy" />
+      <recent name="Brute_force" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/spring-projects/spring-petclinic" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Nnumber2">
+    <configuration name="H_index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.H_index" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Nnumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.Nnumber" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Nnumber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.Nnumber2" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="boj4344" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="BOJ.MHC_Study.Level5.boj4344" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BOJ.MHC_Study.Level5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="boj8958" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BOJ.MHC_Study.Level5.boj8958" />
+      <module name="expert_algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BOJ.MHC_Study.Level5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="carpet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Brute_force.carpet" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Brute_force.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.boj4344" />
+      <item itemvalue="Application.boj8958" />
+      <item itemvalue="Application.carpet" />
+      <item itemvalue="Application.H_index" />
+      <item itemvalue="Application.Nnumber" />
+      <item itemvalue="Application.Nnumber2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Nnumber2" />
+        <item itemvalue="Application.Nnumber" />
+        <item itemvalue="Application.H_index" />
+        <item itemvalue="Application.carpet" />
+        <item itemvalue="Application.boj8958" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69ee7b51-f23a-41bb-86f0-06ec2331d211" name="Default Changelist" comment="" />
+      <created>1569826848837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569826848837</updated>
+      <workItem from="1569826852029" duration="261000" />
+      <workItem from="1569827143891" duration="16000" />
+      <workItem from="1569861895429" duration="1947000" />
+      <workItem from="1569910113158" duration="5000" />
+      <workItem from="1572427038130" duration="1255000" />
+      <workItem from="1572490716375" duration="19000" />
+      <workItem from="1589777713976" duration="51000" />
+      <workItem from="1590036177772" duration="3443000" />
+      <workItem from="1590041548278" duration="34941000" />
+      <workItem from="1590376614974" duration="13275000" />
+      <workItem from="1590548587791" duration="11298000" />
+      <workItem from="1590984113682" duration="12825000" />
+      <workItem from="1591158511271" duration="8493000" />
+      <workItem from="1591327370190" duration="16215000" />
+      <workItem from="1591588435406" duration="14007000" />
+      <workItem from="1591759370392" duration="14180000" />
+      <workItem from="1591932603909" duration="5692000" />
+      <workItem from="1592380149819" duration="736000" />
+      <workItem from="1592799575754" duration="11346000" />
+      <workItem from="1592823486052" duration="39000" />
+      <workItem from="1592825304932" duration="630000" />
+      <workItem from="1592973339510" duration="13926000" />
+      <workItem from="1592990354591" duration="993000" />
+      <workItem from="1593144313338" duration="28837000" />
+      <workItem from="1593176577118" duration="363000" />
+      <workItem from="1593407707878" duration="4195000" />
+      <workItem from="1593576789765" duration="18253000" />
+      <workItem from="1593749228294" duration="10458000" />
+      <workItem from="1594006844382" duration="12960000" />
+      <workItem from="1594035049083" duration="4000" />
+      <workItem from="1594035502130" duration="375000" />
+      <workItem from="1594180666936" duration="18648000" />
+      <workItem from="1594352823688" duration="18055000" />
+      <workItem from="1594380884918" duration="13000" />
+      <workItem from="1594380923245" duration="329000" />
+      <workItem from="1594615216716" duration="10082000" />
+      <workItem from="1594789909530" duration="804000" />
+      <workItem from="1594957275326" duration="23212000" />
+      <workItem from="1595217420961" duration="10075000" />
+      <workItem from="1595242508243" duration="2051000" />
+      <workItem from="1595395633034" duration="12940000" />
+      <workItem from="1595565000855" duration="21165000" />
+      <workItem from="1595824679934" duration="25137000" />
+      <workItem from="1595854880577" duration="205000" />
+      <workItem from="1595995713737" duration="10433000" />
+      <workItem from="1596012139583" duration="8000" />
+      <workItem from="1596426224612" duration="9990000" />
+      <workItem from="1596598310983" duration="5432000" />
+      <workItem from="1596773472325" duration="4600000" />
+      <workItem from="1597034044537" duration="4954000" />
+      <workItem from="1597376966878" duration="17989000" />
+      <workItem from="1597640934773" duration="20455000" />
+      <workItem from="1597663795613" duration="3783000" />
+      <workItem from="1597669115152" duration="1971000" />
+      <workItem from="1597814761391" duration="6292000" />
+      <workItem from="1597822138324" duration="16755000" />
+      <workItem from="1597975446917" duration="9000" />
+      <workItem from="1615266884480" duration="10856000" />
+      <workItem from="1617776982690" duration="697000" />
+      <workItem from="1634625609172" duration="3924000" />
+      <workItem from="1634799750495" duration="975000" />
+      <workItem from="1634801314564" duration="178000" />
+      <workItem from="1635757359294" duration="690000" />
+      <workItem from="1635918140523" duration="19244000" />
+      <workItem from="1635937537010" duration="765000" />
+      <workItem from="1636360017633" duration="228000" />
+      <workItem from="1636360248006" duration="846000" />
+      <workItem from="1636361152860" duration="227000" />
+      <workItem from="1636361390096" duration="226000" />
+      <workItem from="1636361635362" duration="8156000" />
+    </task>
+    <task id="LOCAL-00001" summary="Greedy 'GymSuit','MakeMaxNum' 풀이">
+      <created>1592990715920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592990715920</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Greedy Joystick ing">
+      <created>1593170913269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593170913269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Greedy Lifeboat finish">
+      <created>1593579020149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593579020149</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Greedy SpeedTrap finish">
+      <created>1593595271552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593595271552</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Greedy SpeedTrap upGrade">
+      <created>1593596336716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593596336716</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Greedy ConnectIsland finish">
+      <created>1593758739304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593758739304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Greedy Scale finish">
+      <created>1594013976912</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594013976912</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Greedy Scale finish ( 최소값이 1보다 클 경우 바로 끝. 수정 )">
+      <created>1594014156813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594014156813</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Dynamic NExpression ing">
+      <created>1594028222560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594028222560</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Dynamic NExpression finish">
+      <created>1594197491695</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594197491695</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Dynamic NExpression finish2">
+      <created>1594197882417</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594197882417</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Dynamic Tile finish">
+      <created>1594359223166</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594359223166</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Dynamic Triangle finish">
+      <created>1594370477326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594370477326</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Dynamic BackRoad finish">
+      <created>1594636196589</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594636196589</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Dynamic Card finish">
+      <created>1594966887023</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594966887023</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Dynamic Card finish ( 내용추가 )">
+      <created>1594971052019</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594971052019</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Dynamic Thievery finish">
+      <created>1594983846131</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594983846131</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Dynamic Thievery Travel finish">
+      <created>1595225666122</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1595225666122</updated>
+    </task>
+    <task id="LOCAL-00019" summary="DFS/BFS TargetNum finish ( for BFS)">
+      <created>1595233150513</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1595233150513</updated>
+    </task>
+    <task id="LOCAL-00020" summary="DFS/BFS Network finish ( for DFS)">
+      <created>1595410005010</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1595410005010</updated>
+    </task>
+    <task id="LOCAL-00021" summary="DFS/BFS ChangeWord finish ( for DFS)">
+      <created>1595577797869</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1595577797869</updated>
+    </task>
+    <task id="LOCAL-00022" summary="DFS/BFS ChangeWord finish ( DFS/BFS 두가지 풀이법)">
+      <created>1595586170511</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1595586170511</updated>
+    </task>
+    <task id="LOCAL-00023" summary="DFS/BFS TravelRoute notSolution">
+      <created>1595847945082</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1595847945082</updated>
+    </task>
+    <task id="LOCAL-00024" summary="DFS/BFS TravelRoute finish">
+      <created>1595850245386</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1595850245386</updated>
+    </task>
+    <task id="LOCAL-00025" summary="DFS/BFS BinarySearch Budget finish">
+      <created>1596001508950</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1596001508950</updated>
+    </task>
+    <task id="LOCAL-00026" summary="DFS/BFS BinarySearch Budget finish">
+      <created>1596001530862</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1596001530862</updated>
+    </task>
+    <task id="LOCAL-00027" summary="DFS/BFS BinarySearch Budget finish(update)">
+      <created>1596006564659</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1596006564659</updated>
+    </task>
+    <task id="LOCAL-00028" summary="BinarySearch Immigration finish">
+      <created>1596432247256</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1596432247257</updated>
+    </task>
+    <task id="LOCAL-00029" summary="BinarySearch SteppingStones finish">
+      <created>1596605106725</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1596605106725</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Graph FarthestNode finish">
+      <created>1596776174155</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1596776174156</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Graph Ranking finish">
+      <created>1597038125137</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1597038125138</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Kakao Winter CraneDoll finish">
+      <created>1597382787439</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597382787439</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Kakao Winter Tuple finish">
+      <created>1597392967147</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1597392967147</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Kakao Winter BadUser finish">
+      <created>1597661036391</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1597661036391</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Kakao SteppingStone finish">
+      <created>1597665999752</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1597665999752</updated>
+    </task>
+    <task id="LOCAL-00036" summary="TSP,TSP_update, BitMasking(Set) finish">
+      <created>1597837948288</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1597837948288</updated>
+    </task>
+    <task id="LOCAL-00037" summary="TSP,TSP_update, BitMasking(Set) finish">
+      <created>1615282654727</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1615282654727</updated>
+    </task>
+    <task id="LOCAL-00038" summary="boj 1~5">
+      <created>1635936493822</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1635936493822</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dynamic BackRoad finish" />
+    <MESSAGE value="Dynamic Card finish" />
+    <MESSAGE value="Dynamic Card finish ( 내용추가 )" />
+    <MESSAGE value="Dynamic Thievery finish" />
+    <MESSAGE value="Dynamic Thievery Travel finish" />
+    <MESSAGE value="DFS/BFS TargetNum finish" />
+    <MESSAGE value="DFS/BFS TargetNum finish ( for BFS)" />
+    <MESSAGE value="DFS/BFS Network finish ( for DFS)" />
+    <MESSAGE value="DFS/BFS ChangeWord finish ( for DFS)" />
+    <MESSAGE value="DFS/BFS ChangeWord finish ( DFS/BFS 두가지 풀이법)" />
+    <MESSAGE value="DFS/BFS TravelRoute notSolution" />
+    <MESSAGE value="DFS/BFS TravelRoute finish" />
+    <MESSAGE value="DFS/BFS BinarySearch Budget finish" />
+    <MESSAGE value="DFS/BFS BinarySearch Budget finish(update)" />
+    <MESSAGE value="DFS/BFS BinarySearch Immigration finish" />
+    <MESSAGE value="BinarySearch Immigration finish" />
+    <MESSAGE value="BinarySearch SteppingStones finish" />
+    <MESSAGE value="Graph FarthestNode finish" />
+    <MESSAGE value="Graph Ranking finish" />
+    <MESSAGE value="Kakao Winter CraneDoll finish" />
+    <MESSAGE value="Kakao Winter Tuple finish" />
+    <MESSAGE value="Kakao Winter BadUser finish" />
+    <MESSAGE value="Kakao SteppingStone finish" />
+    <MESSAGE value="TSP,TSP_update, BitMasking(Set) finish" />
+    <MESSAGE value="boj 1~5" />
+    <option name="LAST_COMMIT_MESSAGE" value="boj 1~5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/Dynamic/NExpression.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/Dynamic/NExpression.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/DFS_BFS/ChangeWord.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/KakaoWinter/Tuple.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/KakaoWinter/BadUser.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/expert_algo/src/KakaoWinter/SteppingStone.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/expert_algo/src/DFS_BFS/ChangeWord.java</url>
+          <line>18</line>
+          <properties class="DFS_BFS.ChangeWord">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="charNameArr[3]" />
+        <watch expression="arr[4]" />
+        <watch expression="((KeyIterator)it).this$0" custom="java.util.HashMap.KeyIterator" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
