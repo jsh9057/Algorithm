@@ -1,4 +1,4 @@
-package hash;
+package DP;
 
 /*
     7                (n=0층)
