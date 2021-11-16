@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ee7b51-f23a-41bb-86f0-06ec2331d211" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/expert_algo/src/DP/RoadToSchool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/Network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/production/algo/DP/RoadToSchool2.class" beforeDir="false" afterPath="$PROJECT_DIR$/expert_algo/production/algo/DP/RoadToSchool2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expert_algo/production/algo/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/expert_algo/production/algo/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +44,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/expert_algo/src/hash" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +69,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DP" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeong\eclipse-workspace\algo\expert_algo\src\hash" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,20 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RoadToSchool">
-    <configuration name="H_index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sort.H_index" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TargetNumber">
     <configuration name="Nnumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DP.Nnumber" />
       <module name="algo" />
@@ -133,6 +128,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoadToSchool2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.RoadToSchool2" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TargetNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS_BFS.TargetNumber" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DFS_BFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="boj4344" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -147,34 +168,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="carpet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Brute_force.carpet" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Brute_force.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.boj4344" />
-      <item itemvalue="Application.carpet" />
-      <item itemvalue="Application.H_index" />
       <item itemvalue="Application.Nnumber" />
       <item itemvalue="Application.Nnumber2" />
       <item itemvalue="Application.RoadToSchool" />
+      <item itemvalue="Application.RoadToSchool2" />
+      <item itemvalue="Application.TargetNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TargetNumber" />
+        <item itemvalue="Application.RoadToSchool2" />
         <item itemvalue="Application.RoadToSchool" />
         <item itemvalue="Application.Nnumber2" />
         <item itemvalue="Application.Nnumber" />
-        <item itemvalue="Application.H_index" />
-        <item itemvalue="Application.carpet" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +267,9 @@
       <workItem from="1636361390096" duration="226000" />
       <workItem from="1636361635362" duration="12384000" />
       <workItem from="1636451506722" duration="1271000" />
-      <workItem from="1636525048640" duration="1449000" />
+      <workItem from="1636525048640" duration="9909000" />
+      <workItem from="1636695767246" duration="5652000" />
+      <workItem from="1637044304186" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="Greedy 'GymSuit','MakeMaxNum' 풀이">
       <created>1592990715920</created>
@@ -541,7 +551,42 @@
       <option name="project" value="LOCAL" />
       <updated>1636451730017</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="2021/11/10 DP RoadToSchool,2 풀이">
+      <created>1636534134757</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1636534134757</updated>
+    </task>
+    <task id="LOCAL-00042" summary="2021/11/10 DP Triangle 풀이">
+      <created>1636534358615</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1636534358615</updated>
+    </task>
+    <task id="LOCAL-00043" summary="2021/11/10 DP Triangle 경로 수정">
+      <created>1636534436106</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1636534436106</updated>
+    </task>
+    <task id="LOCAL-00044" summary="2021/11/10 DP Triangle 경로 수정">
+      <created>1636534514921</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1636534514921</updated>
+    </task>
+    <task id="LOCAL-00045" summary="2021/11/12 DFS_BFS TargetNumber 풀이">
+      <created>1636700802911</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1636700802912</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,10 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dynamic Card finish ( 내용추가 )" />
-    <MESSAGE value="Dynamic Thievery finish" />
-    <MESSAGE value="Dynamic Thievery Travel finish" />
-    <MESSAGE value="DFS/BFS TargetNum finish" />
     <MESSAGE value="DFS/BFS TargetNum finish ( for BFS)" />
     <MESSAGE value="DFS/BFS Network finish ( for DFS)" />
     <MESSAGE value="DFS/BFS ChangeWord finish ( for DFS)" />
@@ -586,7 +627,11 @@
     <MESSAGE value="boj 1~5" />
     <MESSAGE value="DP 문제풀이" />
     <MESSAGE value="2021/11/09 DP풀이" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021/11/09 DP풀이" />
+    <MESSAGE value="2021/11/10 DP RoadToSchool,2 풀이" />
+    <MESSAGE value="2021/11/10 DP Triangle 풀이" />
+    <MESSAGE value="2021/11/10 DP Triangle 경로 수정" />
+    <MESSAGE value="2021/11/12 DFS_BFS TargetNumber 풀이" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021/11/12 DFS_BFS TargetNumber 풀이" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
