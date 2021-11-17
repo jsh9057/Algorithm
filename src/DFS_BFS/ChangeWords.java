@@ -1,11 +1,16 @@
 package DFS_BFS;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/*
+
+    bfs 로 풀이해봤습니다.
+
+ */
+
+
 public class ChangeWords {
-    static int WORDS_LEN;
 
     public static void main(String args[]){
         String begin="hit";
@@ -13,67 +18,40 @@ public class ChangeWords {
         String[] words= {"hot", "dot", "dog", "lot", "log", "cog"};
         int answer = 0;
 
-        WORDS_LEN = words.length;
-        LinkedList<Node> nodes = new LinkedList<>();
-        Queue<Node> nodeQueue = new LinkedList<>();
-        boolean[] visit = new boolean[WORDS_LEN];
+        boolean[] visit = new boolean[words.length];
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(new Node(begin,0));                               // 첫 노드 begin 을 만들고 큐에 넣어줍니다.
 
-
-        for(int i=0; i<WORDS_LEN; i++){
-            Node node =new Node(words[i],i);
-            for(int j=0; j<WORDS_LEN; j++){
-                if(i!=j&& isChange(words[i],words[j])){node.list.add(new Node(words[j],j));}
+        while (!queue.isEmpty()){                                       // bfs 노드 순회 방식
+            Node now = queue.poll();                                    // 큐의 최상단에서 노드를 가져옵니다.
+            int cost = now.cost;
+            if(now.next.equals(target)){                                // target 과 현재 노드의 단어가 같다면 순회는 끝납니다.
+                answer=cost;                                            // 시작 노드와의 거리
+                break;
             }
-            nodes.add(node);
-        }
-
-        for(int i=0; i<WORDS_LEN; i++){
-            if(isChange(begin,words[i])){ nodeQueue.add(nodes.get(i)); visit[i]=true;}
-        }
-
-
-//        for(int i=0; i<WORDS_LEN; i++){
-//            Node node = nodes.get(i);
-//            System.out.println("node: "+node.word);
-//            for(int j=0; j<node.list.size(); j++){
-//                System.out.print(node.list.get(j).word+" ");
-//            }
-//            System.out.println();
-//        }
-
-
-
-
-        while (!nodeQueue.isEmpty()){
-            Node node = nodeQueue.poll();
-            System.out.println("node: "+node.word);
-            if(node.word.equals(target)){ System.out.println("answer: "+answer);return;}
-            for(int i=0; i<node.list.size(); i++){
-                int num = node.list.get(i).num;
-                if(!visit[num]){
-                    System.out.println("push: "+node.list.get(i).word);
-                    nodeQueue.add(nodes.get(num));
-                    visit[num]=true;
+            for(int i=0; i<words.length; i++){
+                if(isChange(now.next,words[i]) && !visit[i]){           // 단어를 바꿀수있느지 없는지와 방문했는지 검사
+                    queue.add(new Node(words[i], cost+1));          // 단어를 바꿀수있고 방문하지않았다면 큐에 넣어줍니다.
+                    visit[i]=true;                                      // visit 최신화
                 }
             }
-            System.out.println();
-            System.out.println("answer++");
-            answer++;
         }
 
+        System.out.println(answer);
     }
+
+
     static class Node {
-        String word;
-        int num;
-        LinkedList<Node> list = new LinkedList<>();
+        String next;
+        int cost;
 
-        public Node(String word, int num) {
-            this.word = word;
-            this.num = num;
+        public Node(String next, int cost) {
+            this.next = next;
+            this.cost = cost;
         }
     }
 
-    public static Boolean isChange(String a, String b){
+    public static Boolean isChange(String a, String b){                 // 두 단어가 변환될 수 있는지 판단
         String[] splitA = a.split("");
         String[] splitB = b.split("");
         int diffNum=0;
