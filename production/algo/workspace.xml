@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ee7b51-f23a-41bb-86f0-06ec2331d211" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expert_algo/production/algo/DP/RoadToSchool2.class" beforeDir="false" afterPath="$PROJECT_DIR$/expert_algo/production/algo/DP/RoadToSchool2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expert_algo/src/DFS_BFS/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expert_algo/src/Greedy/TrainingClothes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expert_algo/production/algo/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/expert_algo/production/algo/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,13 +88,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TargetNumber">
-    <configuration name="Nnumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.Nnumber" />
+  <component name="RunManager" selected="Application.TrainingClothes">
+    <configuration name="BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS_BFS.BFS" />
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="DFS_BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,25 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Nnumber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.Nnumber2" />
+    <configuration name="Network" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS_BFS.Network" />
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoadToSchool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.RoadToSchool" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="DFS_BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,6 +141,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrainingClothes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Greedy.TrainingClothes" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="boj4344" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -170,19 +170,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.boj4344" />
-      <item itemvalue="Application.Nnumber" />
-      <item itemvalue="Application.Nnumber2" />
-      <item itemvalue="Application.RoadToSchool" />
       <item itemvalue="Application.RoadToSchool2" />
       <item itemvalue="Application.TargetNumber" />
+      <item itemvalue="Application.Network" />
+      <item itemvalue="Application.BFS" />
+      <item itemvalue="Application.TrainingClothes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrainingClothes" />
+        <item itemvalue="Application.BFS" />
+        <item itemvalue="Application.Network" />
         <item itemvalue="Application.TargetNumber" />
         <item itemvalue="Application.RoadToSchool2" />
-        <item itemvalue="Application.RoadToSchool" />
-        <item itemvalue="Application.Nnumber2" />
-        <item itemvalue="Application.Nnumber" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +269,10 @@
       <workItem from="1636451506722" duration="1271000" />
       <workItem from="1636525048640" duration="9909000" />
       <workItem from="1636695767246" duration="5652000" />
-      <workItem from="1637044304186" duration="1245000" />
+      <workItem from="1637044304186" duration="3566000" />
+      <workItem from="1637048096843" duration="26000" />
+      <workItem from="1637307125675" duration="3535000" />
+      <workItem from="1637909491073" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="Greedy 'GymSuit','MakeMaxNum' 풀이">
       <created>1592990715920</created>
@@ -586,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636700802912</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="2021/11/16 DFS_BFS Network 풀이">
+      <created>1637047242366</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1637047242366</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +616,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DFS/BFS TargetNum finish ( for BFS)" />
     <MESSAGE value="DFS/BFS Network finish ( for DFS)" />
     <MESSAGE value="DFS/BFS ChangeWord finish ( for DFS)" />
     <MESSAGE value="DFS/BFS ChangeWord finish ( DFS/BFS 두가지 풀이법)" />
@@ -631,7 +640,8 @@
     <MESSAGE value="2021/11/10 DP Triangle 풀이" />
     <MESSAGE value="2021/11/10 DP Triangle 경로 수정" />
     <MESSAGE value="2021/11/12 DFS_BFS TargetNumber 풀이" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021/11/12 DFS_BFS TargetNumber 풀이" />
+    <MESSAGE value="2021/11/16 DFS_BFS Network 풀이" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021/11/16 DFS_BFS Network 풀이" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
