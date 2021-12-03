@@ -1,43 +1,33 @@
 package Greedy;
 
 /*
+    문제 아이디어:
+    연속된 A가 나올 경우 왼쪽으로 이동하는 경우와 직진하는경우 더 작은 이동을 선택합니다.
+    시간복잡도: O(n^2)
 
-            JJAAAJ 앞의 갯수+1보다 연속된 A의 길이 크다면 앞으로갓다가 뒤로  pre > A.length +1
-                    앞의 갯수+1 연속된 A의 길이랑 같으면 어디로가나 같음   pre == A.length+1 anyway
-            JJJAJ  앞의 갯수-1보다 연속된 A의 길이가 작거으면 앞으로가야 함.  pre < A.length-1
-
-            BBAAABBB
-            01234567
  */
 
 
 
 public class Joystick {
     public static void main(String args[]) {
-        String name = "BBAAAB";
-
+        String name = "BBAAB";
         int answer = 0;
-
         int len = name.length();
+        int min = len-1;                                                            // 직진하는 경우
+        for(int i=0; i<name.length(); i++){
+            answer += Math.min((name.charAt(i) - 'A'),('Z' - name.charAt(i)+1));    // 문자 변환.
+                                                                                    // i는 현재 위치
+            int next = i+1;
+            while(next < len && name.charAt(next)=='A'){next++;}                    // i+1부터 연속된 A의 끝 위치를 알기위해
+            min = Math.min(min,(i*2)+ (len- next));                                 // i+1부터 연속된 A의 끝 위치 전까지만 이동하면 됩니다.
 
-        //최대로 가질 수 있는 min값은 끝까지 가는것
-        int min_move = len - 1;
+        }
+        answer+=min;
 
-        for (int i = 0; i < len; i++) {
-            answer += Math.min(name.charAt(i) - 'A', 'Z' - name.charAt(i) + 1);
-
-            //좌우: 연속된 A의 등장에 따라 최소 움직임이 달라진다
-            int next = i + 1;// 현재 다음 위치부터
-            //내 다음이 A라면 계속 NEXT++
-            while (next < len && name.charAt(next) == 'A')
-                next++;
-            //                      5     1 + 6 - 5 + 1
-            min_move = Math.min(min_move, i + len - next + i);
-        }//for
-
-        answer += min_move;
 
         System.out.println(answer);
+
     }
 
 }
