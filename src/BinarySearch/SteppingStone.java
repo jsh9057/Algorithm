@@ -21,6 +21,8 @@ package BinarySearch;
     mid 가 조건을 충족하더라도 left 를 늘려줍니다.
     left 가 더이상 조건을 충족하지않으면 마지막 mid 값이 정답이 됩니다.
 
+    시간복잡도: O(logN)
+
  */
 
 
