@@ -21,21 +21,9 @@ package BinarySearch;
     문제를 그대로 가져올경우
     28분 뿐만 아니라 29분도 6명이 심사를 받기때문입니다.
 
-    if(sum<n){left=mid+1;}  mid 를 기준으로 오른쪽을 탐색해야 합니다.
-                            여기서 left 를 mid+1 로 설정한 이유는, 이미 mid 의 값은 답을 절대로 충족하지 않기 때문입니다.
+    최소 시간을 보장하기위해 n과 심사받은 인원이 같더라도 right 의 값을 줄여나갑니다.
+    계속 줄여나가다가 더이상 충족하지않은 mid 값이 나오면 바로 그 전의 mid 값이 최소시간이 됩니다.
 
-    else{ right=mid; answer=mid;}      right 를 mid 로 설정한 이유는 right 는 답을 충족할 수도 있기 때문입니다.
-                                       그러므로 right 값을 계속 mid 로 고정하고(답을 충족하는 mid 값의 최소를 알기 위해) 결국 left 의 값이 증가하여
-                                       반복문을 나올때까지 합니다.
-                                       27, 28, 29, 30, 31      left=27, mid=29, right=31, sum=6    : answer = 29
-                                                               left=27, mid=28, right=29, sum=6    : answer = 28
-                                                               left=27, mid=27, right=28, sum=5
-                                                               left = 28 == right  반복문 탈출.
-
-                                                               만약 -1 을 할경우
-                                                               left=27, mid=29, right=31, sum=6    : answer =29
-                                                               left=27, mid=27, right=28, sum=5
-                                                               left = 28 == right 반복문 탈출.
     시간복잡도: O(logN)
 
  */
@@ -58,8 +46,8 @@ public class Immigration {
             for(int i=0; i<times.length; i++){
                 sum += mid/times[i];                                // 몇명이 심사를 받는지 확인하기 위한 sum
             }
-            if(sum<n){left=mid+1;}                                  // 답일 가능성이 전혀 없으므로 +1
-            else{right=mid-1; answer=mid;}                            // 답이 포함되어있을 수도 있으므로 right 를 mid 로 계속 고정
+            if(n>sum){left=mid+1;}                                  // mid 값이 너무 작은 경우
+            else{right=mid-1; answer=mid;}                          // mid 값이 너무 큰 경우
         }
         System.out.println(answer);
     }
