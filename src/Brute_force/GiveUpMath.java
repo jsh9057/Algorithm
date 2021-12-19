@@ -3,7 +3,7 @@ package Brute_force;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class giveUpMath {
+public class GiveUpMath {
     public static void main(String args[]){
         int[] s1 = solution(new int[] {1,2,3,4,5});
         int[] s2 = solution(new int[] {1,3,2,4,2});
