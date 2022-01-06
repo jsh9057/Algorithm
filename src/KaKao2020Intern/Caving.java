@@ -1,5 +1,18 @@
 package KaKao2020Intern;
 
+/**
+ *  문제 아이디어:
+ *      0. BFS 탐색을 기본
+ *      1. 상태를 세 가지를 두어 큐에 저장.
+ *          - 방문, 미방문, 닫힘.  (닫힘은 선행 동굴을 아직 안간상태)
+*       2. <선행동굴 ,후행동굴> 로 조회를 할 수 있어야 함.    (현재 탐색한 동굴이 어딘가의 선행 동굴일 수 있기때문 )
+ *      3. <후행동굴 ,선행동굴> 로도 조회를 할 수 있어야 함.   (현재 탐색한 동굴이 선행 동굴을 필요할 수 있기때문 )
+ *      4. 문제에서 제시한 임의 두 동굴이 서로 가지못하는 경우는 없다.
+ *          = 임의의 두 동굴은 반드시 연결되어있다.         ( 어디가의 선행동굴을 탐험했다면, 후행 동굴은 반드시 갈 수 있음)
+ *          = 즉 선행 동굴을 탐험 했다면, 후행 동굴은 바로 방문 상태로 바꾸어도 된다. ( 굳이 노드를 타고 위로 다시 올라가서 탐색할 이유X )
+ *
+ */
+
 import java.util.*;
 
 public class Caving {
@@ -22,24 +35,24 @@ public class Caving {
     public static boolean solution(int n, int[][] path, int[][] order){
         int[] visit =new int[n];
         Queue<Integer> q = new LinkedList<>();
-        ArrayList<Integer>[] conCave = new ArrayList[n];
-        HashMap<Integer,Integer> i_o = new HashMap<>();
-        HashMap<Integer,Integer> o_i = new HashMap<>();
+        ArrayList<Integer>[] conCave = new ArrayList[n];    // 동굴의 연결 정보
+        HashMap<Integer,Integer> i_o = new HashMap<>();     // key-value <선행,후행>
+        HashMap<Integer,Integer> o_i = new HashMap<>();     // key_value <후행,선행>
 
         for(int i=0; i<n; i++){
             conCave[i]= new ArrayList<>();
         }
 
         for(int[] p: path){
-            conCave[p[0]].add(p[1]);
+            conCave[p[0]].add(p[1]);                        // 동굴은 양방향 연결이기 때문에
             conCave[p[1]].add(p[0]);
         }
         for(int[] o: order){
-            i_o.put(o[0],o[1]);
+            i_o.put(o[0],o[1]);                             // 선행,후행 동굴
             o_i.put(o[1],o[0]);
         }
 
-        if(o_i.keySet().contains(0)){return false;}
+        if(o_i.keySet().contains(0)){return false;}         // 테스트 케이스 30번 0번 동굴이 후행이고, 선행동굴을 필요하면 바로 false 반환
         q.add(0);
         visit[0]=1;
 
@@ -47,7 +60,7 @@ public class Caving {
             int pq = q.poll();
             for(int i=0; i<conCave[pq].size(); i++){    //연결된 동굴 탐색
                 int next = conCave[pq].get(i);
-                if(visit[next]==NOT_VISIT){                     // 탐색하지않았고
+                if(visit[next]==NOT_VISIT){            // 탐색하지않았고
                     if(o_i.keySet().contains(next)){
                         if(visit[o_i.get(next)]== VISIT){   // 선행 동굴을 탐색했으면
                             q.add(next);                    // 큐에 넣어 줌.
@@ -67,11 +80,9 @@ public class Caving {
 
             }
         }
-
         for(int v : visit){
             if(v!=VISIT) return false;
         }
-
         return true;
     }
 }
