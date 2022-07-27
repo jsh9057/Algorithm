@@ -32,11 +32,11 @@ public class Sticker {
         int[] dp1 = new int[N];   // 1 ~ N 까지의 숫자로
 
         dp0[0]=sticker[0];
-        dp0[1]=sticker[1];
+        dp0[1]=sticker[0];
         dp0[2]=Math.max(sticker[0]+sticker[2], dp0[1]);
 
         for (int i=3;i<N-1;i++){
-            dp0[i]=Math.max(dp0[i-1],Math.max(dp0[i-2],dp0[i-3])+sticker[i]);
+            dp0[i]=Math.max(dp0[i-1],dp0[i-2]+sticker[i]);
         }
 
         dp1[0]=0;
@@ -44,7 +44,7 @@ public class Sticker {
         dp1[2]=Math.max(sticker[1],sticker[2]);
 
         for(int i=3; i<N;i++){
-            dp1[i]=Math.max(dp1[i-1],Math.max(dp1[i-2],dp1[i-3])+sticker[i]);
+            dp1[i]=Math.max(dp1[i-1],dp1[i-2]+sticker[i]);
         }
         System.out.println(Math.max(dp0[N-2],dp1[N-1]));
     }
