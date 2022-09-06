@@ -80,7 +80,7 @@ public class CandidateKey {
 
     static void comb(String str, boolean[] visited, int start, int n,int r){    // 모든 후보키 조합을 만들기 위해서
         if(r==0){ cb.add(str); }
-        for(int i=start; id<n; i++){
+        for(int i=start; i<n; i++){
             visited[i]=true;
             comb(str+i,visited,i+1,n,r-1);
             visited[i]=false;
