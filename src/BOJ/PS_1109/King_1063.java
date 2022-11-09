@@ -1,4 +1,4 @@
-package PS_1109;
+package BOJ.PS_1109;
 
 import java.io.BufferedReader;
 import java.io.IOException;
