@@ -3,7 +3,6 @@ package BOJ.PS_0208;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 /*
     메모리 초과 해결을 못했습니다.
@@ -30,7 +29,7 @@ import java.util.ArrayList;
 
 public class boj10434_Happy {
     static int[] prime = new int[10001];
-    static ArrayList<Integer> cycle = new ArrayList<>();
+//    static ArrayList<Integer> cycle = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
@@ -65,7 +64,8 @@ public class boj10434_Happy {
     }
 
     static boolean isHappy(int n){
-        int origin = n;
+//        int origin = n;
+        int[] isCycle = new int[500];
         while (true){
             if(n==1) return true;
             int sum = 0;
@@ -74,12 +74,14 @@ public class boj10434_Happy {
                 n/=10;
             }
             n=sum;
-            cycle.add(n);
-            if(origin==sum){
-                for (int i = 0; i < cycle.size(); i++) { prime[cycle.get(i)]=1; }
-                cycle.clear();
-                return false;
-            }
+            if(isCycle[n]==1){ return false;}
+            isCycle[n]=1;
+//            cycle.add(n);
+//            if(origin==sum){
+//                for (int i = 0; i < cycle.size(); i++) { prime[cycle.get(i)]=1; }
+//                cycle.clear();
+//                return false;
+//            }
         }
     }
 }
