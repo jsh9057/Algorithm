@@ -74,6 +74,7 @@ public class boj10434_Happy {
                 n/=10;
             }
             n=sum;
+            System.out.println(n);
             if(isCycle[n]==1){ return false;}
             isCycle[n]=1;
 //            cycle.add(n);

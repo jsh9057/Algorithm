@@ -53,10 +53,9 @@ public class boj1713_Candidate {
 
                 //  2-2. 사진틀 자리가 없음.
                 else {
-                    // 등록시간 오름차순 정렬
+                    // 시간오름차순
                     Collections.sort(frames, Comparator.comparing(Candidate::getTurn));
-
-                    // 득표수 오름차순 정렬
+                    // 득표오름차순
                     Collections.sort(frames, Comparator.comparing(Candidate::getVotesGot));
 
                     frames.set(0, new Candidate(currVoteNum, 1, i));
