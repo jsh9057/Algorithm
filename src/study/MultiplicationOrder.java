@@ -5,12 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class MultiplicationOrder {
-/*
-3
-5 3
-3 2
-2 6
- */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
@@ -21,21 +15,15 @@ public class MultiplicationOrder {
             arr[i][1] = Integer.parseInt(split[1]);
         }
         int[][] dp = new int[N][N];
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                dp[i][j] = Integer.MAX_VALUE/2;
-            }
-        }
-        // dp[n][k] -> n부터 k만큼 왼쪽으로 묶음
-        for (int k = 1; k <  N; k++) {
-            for (int n = k; n < N ; n++) {
-                if(k==1){ dp[n][k] = Math.min(arr[n-k][0]*arr[n][0]*arr[n][1],dp[n][k]); }
-                else{
-                    dp[n][k] = Math.min(dp[n-1][k-1]+(arr[n-k][0]*arr[n][0]*arr[n][1]),dp[n][k]);
-                    dp[n][k] = Math.min(dp[n][k-1]+(arr[n-k][0]*arr[n-k][1]*arr[n][1]),dp[n][k]);
+
+        for (int n = 1; n < N; n++){
+            for (int i = 0; i+n < N; i++) {
+                dp[i][i+n] = Integer.MAX_VALUE;
+                for (int k = i; k < n+i; k++) {
+                    dp[i][n+i] = Math.min(dp[i][n+i],dp[i][k]+dp[k+1][i+n] + arr[i][0]*arr[k][1]*arr[i+n][1]);
                 }
             }
         }
-        System.out.println(dp[N-1][N-1]);
+        System.out.println(dp[0][N-1]);
     }
 }
