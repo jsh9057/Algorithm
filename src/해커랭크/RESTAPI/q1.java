@@ -5,8 +5,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
 public class q1 {
     static class PageGame{
@@ -104,9 +102,9 @@ public class q1 {
         connection.setRequestMethod("GET");
         BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         String line = br.readLine();
-        Gson gson = new Gson();
-        PageGame pageGame = gson.fromJson(line, PageGame.class);
-        System.out.println(pageGame.data[0].toString());
+//        Gson gson = new Gson();
+//        PageGame pageGame = gson.fromJson(line, PageGame.class);
+//        System.out.println(pageGame.data[0].toString());
 //        while ((line = br.readLine())!=null){
 //            System.out.println(line);
 //        }
