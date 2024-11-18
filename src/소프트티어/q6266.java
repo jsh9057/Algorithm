@@ -4,7 +4,6 @@ import java.util.*;
 
 public class q6266 {
     static final int START = 9;
-
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] split = br.readLine().split(" ");
